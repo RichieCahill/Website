@@ -13,7 +13,7 @@ app.use('/images', express.static(__dirname + '/Images'));
 
 
 app.get('/',(reg, res) => {
-  readFile('./home.html', 'utf-8', (err, html) => {
+  readFile('./index.html', 'utf-8', (err, html) => {
 
     if(err){
       res.status(500).send('Sorry, out of order')
@@ -29,4 +29,5 @@ app.get('/',(reg, res) => {
   })
 });
 
-app.listen(5002, () => console.log('http://localhost:5002/'))
+app.listen(5000, () => console.log('http://localhost:5000/'))
+
