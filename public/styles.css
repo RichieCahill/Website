@@ -1,10 +1,33 @@
 /*primary styles*/
-body{
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
+@media screen and (max-width: 540px) {
+  body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 800px) {
+  body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+  }
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+  }
+}
+
+
+
+
+
 .container{
+  font-size: 20px;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -116,4 +139,87 @@ body{
 
 .profile-pic-wrapper img{
   width: 100%;
+}
+
+/* resume */
+.experience {
+  margin: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  
+  .experience {
+    margin: 10px;
+  }
+  
+  .Skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .Skills-group{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+  }  
+}
+
+@media screen and (min-width: 540px) and (max-width: 800px) {
+  
+  .experience {
+    margin: 10px;
+  }
+  .Skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  .Skills-group{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  
+  .experience {
+    margin: 20px;
+  }
+  
+  .Skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  }
+  
+  .Skills-group{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.Skills-group h3{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.education p{
+  font-size: 18px;
+}
+.certifications p{
+  font-size: 18px;
+}
+
+.job li{
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.job-title{
+  display: flex;
+}
+
+.job-title h3{
+  margin-right: 5px;
 }

@@ -19,12 +19,28 @@ app.get('/',(reg, res) => {
       res.status(500).send('Sorry, out of order')
     }
 
-    const count = readFileSync('./count.txt', 'utf-8');
-    console.log('count ', count)
+    res.send(html);
+  })
+});
 
-    const newCount = parseInt(count) + 1
+app.get('/about', function (req, res) {
+  readFile('./about.html', 'utf-8', (err, html) => {
 
-    
+    if(err){
+      res.status(404).send('page not found')
+    }
+
+    res.send(html);
+  })
+});
+
+app.get('/resume', function (req, res) {
+  readFile('./resume.html', 'utf-8', (err, html) => {
+
+    if(err){
+      res.status(404).send('page not found')
+    }
+
     res.send(html);
   })
 });
