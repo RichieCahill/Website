@@ -1,29 +1,8 @@
 /*primary styles*/
-@media screen and (max-width: 540px) {
-  body {
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-  }
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 540px) and (max-width: 800px) {
-  body {
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  body {
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-  }
-}
-
-
-
 
 
 .container{
@@ -34,10 +13,12 @@
 
 /*nav styles*/
 .nav-bar {
+  background-color: #620593;
   display: flex;
   justify-content: space-between;
   padding: 38px;
-  font-weight: 600;
+  font-weight: 800;
+  color: #c7c7c7;
 }
 
 .left-side {
@@ -57,7 +38,7 @@
 }
 
 .nav-bar-link a {
-  color: #8a8a8a;
+  color: #c7c7c7;
   text-decoration: none;
   transition: color 0.5s;
 }
