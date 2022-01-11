@@ -2,8 +2,10 @@
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
+  background-color: #000;
+  margin: 0px;
+  padding: 0px;
 }
-
 
 .container{
   font-size: 20px;
@@ -21,8 +23,18 @@ body {
   color: #c7c7c7;
 }
 
-.left-side {
-  display: flex;
+@media screen and (max-width: 650px) {
+  .left-side {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (min-width: 650px) {
+  .left-side {
+    display: flex;
+  }
 }
 
 .nav-bar > .left-side > div {
@@ -51,19 +63,29 @@ body {
   color: black;
 }
 
-.active-nav-link{
-  border-bottom: 3px solid black;
+@media screen and (min-width: 650px) {
+ .active-nav-link{
+    border-bottom: 3px solid black;
+  }
 }
 
 .active-nav-link a{
   color: black;
 }
 
-
 /*content styles*/
-.projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 1200px) {
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .project{
@@ -102,7 +124,7 @@ body {
   color: transparent;
 }
 
-.img-text-wrapper:hover .subtitle {
+.img-text-wrapper .subtitle {
   font-weight: 600;
   color: lightseagreen;
 }
@@ -116,6 +138,7 @@ body {
 .two-column-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #fff;
 }
 
 .profile-pic-wrapper img{
@@ -124,13 +147,13 @@ body {
 
 /* resume */
 .experience {
-  margin: 10px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 540px) {
   
   .experience {
-    margin: 10px;
+    padding: 10px;
   }
   
   .Skills{
@@ -148,7 +171,7 @@ body {
 @media screen and (min-width: 540px) and (max-width: 800px) {
   
   .experience {
-    margin: 10px;
+    padding: 10px;
   }
   .Skills{
     display: grid;
@@ -165,7 +188,7 @@ body {
 @media screen and (min-width: 800px) {
   
   .experience {
-    margin: 20px;
+    padding: 20px;
   }
   
   .Skills{
