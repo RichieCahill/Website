@@ -227,3 +227,28 @@ margin-bottom: 0px;
 .job-title h3{
   margin-right: 5px;
 }
+
+
+.Mistakes {
+  color: #c7c7c7;
+}
+
+.Mistakes-title{
+  text-align: center;
+}
+
+.Mistakes-content-pic{
+  height: 300px;
+  width:  400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.Mistake-content{
+  display: flex;
+}
+
+
+
