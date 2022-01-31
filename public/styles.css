@@ -228,27 +228,42 @@ margin-bottom: 0px;
   margin-right: 5px;
 }
 
-
+/* Mistakes */
 .Mistakes {
   color: #c7c7c7;
+  padding: 30px;
 }
 
 .Mistakes-title{
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .Mistakes-content-pic{
   height: 300px;
   width:  400px;
+  border-radius: 18px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.Mistake-wrapper{
+  border-radius: 25px;
+  border: 7px solid #620593;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 .Mistake-content{
   display: flex;
 }
 
+.Mistake-Story{
+  width: 100%;
+  padding-left: 10px;
+}
 
 
