@@ -124,7 +124,7 @@ body {
   color: transparent;
 }
 
-.img-text-wrapper .subtitle {
+.img-text-wrapper:hover .subtitle {
   font-weight: 600;
   color: lightseagreen;
 }

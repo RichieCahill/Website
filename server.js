@@ -45,8 +45,8 @@ app.get('/resume', function (req, res) {
   })
 });
 
-app.get('/Mistakes', function (req, res) {
-  readFile('./Mistakes.html', 'utf-8', (err, html) => {
+app.get('/mistakes', function (req, res) {
+  readFile('./mistakes.html', 'utf-8', (err, html) => {
 
     if(err){
       res.status(404).send('page not found')
