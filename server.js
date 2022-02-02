@@ -56,5 +56,16 @@ app.get('/mistakes', function (req, res) {
   })
 });
 
+app.get('/blog', function (req, res) {
+  readFile('./blog.html', 'utf-8', (err, html) => {
+
+    if(err){
+      res.status(404).send('page not found')
+    }
+
+    res.send(html);
+  })
+});
+
 app.listen(5000, () => console.log('http://localhost:5000/'))
 
