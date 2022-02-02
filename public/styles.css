@@ -138,12 +138,19 @@ body {
 .two-column-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fff;
+  background-color: #000;
+  color: #c7c7c7;
 }
 
 .profile-pic-wrapper img{
   width: 100%;
 }
+
+.profile-content-wrapper{
+  padding: 30px;
+}
+
+
 
 /* resume */
 .experience {
