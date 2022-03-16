@@ -200,8 +200,8 @@ body {
   
   .Skills{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+[    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+]
   }
   
   .Skills-group{
@@ -281,4 +281,37 @@ margin-bottom: 0px;
   padding: 30px;
   font-weight: bold;
   text-align: center;
+}
+
+
+
+
+/* FizzBuzz */
+
+
+.FizzBuzz {
+  color: #c7c7c7;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 880px;
+  margin-right: 880px;
+  margin-bottom: 100px;
+}
+
+.FizzBuzz li:nth-child(3n),
+.FizzBuzz li:nth-child(5n),
+.FizzBuzz li:nth-child(15n) {
+    list-style: none;
+}
+
+.FizzBuzz li:nth-child(3n):before {
+    content: 'Fizz';
+}
+
+.FizzBuzz li:nth-child(5n):before {
+  content: 'Buzz';
+}
+
+.FizzBuzz li:nth-child(15n):before {
+  content: 'Fizz Buzz';
 }
