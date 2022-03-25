@@ -1,0 +1,11 @@
+---
+version: "2.1"
+services:
+  qbittorrent:
+    build: .
+    container_name: website
+    environment:
+      - TZ=America/New_York
+    ports:
+      - 5000:5000
+    restart: unless-stopped
